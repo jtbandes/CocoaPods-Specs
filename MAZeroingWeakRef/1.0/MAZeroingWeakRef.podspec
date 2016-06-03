@@ -12,8 +12,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mikeash/MAZeroingWeakRef.git", :tag => "1.0" }
 
   s.ios.deployment_target = '4.0'
-  s.osx.deployment_target = '10.5'
+  s.osx.deployment_target = '10.6'
   s.source_files = 'Source/MA*.{h,m}'
   s.exclude_files = 'Source/main.m'
   s.private_header_files = 'Source/MAZeroingWeakRefNativeZWRNotAllowedTable.h'
+  s.requires_arc = false
 end
